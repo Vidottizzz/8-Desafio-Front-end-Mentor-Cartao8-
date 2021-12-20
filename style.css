@@ -9,12 +9,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+.filter-white {
+  filter: invert(1) brightness(500%) sepia(1%) saturate(10000%);
+
+}
 
 body {
   font-size: 0.8125rem;
   font-family: "Manrope", sans-serif;
   background-color: var(--lightGrayishBlue);
 }
+
 .card {
   width: 20.5rem;
   height: 33.6rem;
@@ -84,7 +89,7 @@ footer .wrap-footer .social-div:hover {
   align-self: center;
 }
 .card .card-content footer .wrap-footer-text p {
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.2rem;
 }
 .card .card-content footer .wrap-footer-text p:nth-child(1) {
   font-weight: 700;
@@ -117,7 +122,7 @@ footer .wrap-footer .social-div:hover {
 .wrap-footer-active .social-links-active {
   display: flex;
   align-items: center;
-  margin-right: 3.5rem;
+  margin-right: 3rem;
 }
 .wrap-footer-active .social-links-active img {
   padding-left: 1rem;
@@ -129,7 +134,7 @@ footer .wrap-footer .social-div:hover {
 }
 
 .wrap-footer-active .social-div-active {
-  background-color: var(--lightGrayishBlue);
+  background-color: var(--desaturatedDarkBlue);
   cursor: pointer;
   padding: 0.38rem 0.5rem 0.1rem 0.5rem;
   border-radius: 50%;
