@@ -109,14 +109,16 @@ footer .wrap-footer .social-div:hover {
   padding: 1rem 2rem 1rem 2rem;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
-  transition: all 0.3s ease-in-out;
+  
 }
 
 .show {
   display: flex;
+  
 }
 .hide {
   display: none;
+
 }
 
 .wrap-footer-active .social-links-active {
@@ -147,4 +149,67 @@ footer .wrap-footer .social-div:hover {
 footer .wrap-footer-active .social-div:hover {
   cursor: pointer;
   
+}
+
+/* ------------------------------------- MEDIA ----------------------------------- */
+
+@media only screen and (min-width: 1100px) {
+
+  .card {
+    width: 45rem;
+    height: 17.5rem;
+    background-color: white;
+    margin: auto;
+    border-radius: 0.5rem;
+    margin-top: 8rem;
+  }
+ 
+
+figure {
+  width: 50%;
+  height: 100%;
+  
+}
+.card .card-content {
+  width: 50%;
+  display: flex;
+}
+.card .card-content #head-img {
+  height: 17.5rem;
+  width: 21.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0;
+position: absolute;
+  clip: rect(0px, 283px, 285px, 0px);
+}
+.wrapper {
+  width: 100%;
+  margin: auto;
+  padding-top: 0rem;
+  margin-left: 18.5rem;
+}
+
+.card .card-content .wrapper main h1 {
+  width: 26rem;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  padding: 1.86rem 2rem 0.25rem 2rem;
+}
+.card .card-content .wrapper main p {
+  width: 26rem;
+  font-size: 0.80rem;
+  line-height: 1.4rem;
+  margin-bottom: 1.3rem;
+  padding: 0.6rem 2rem 0rem 2rem;
+}
+.card .card-content #footer-avatar {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+.wrap-footer {
+  padding-top: 0rem;
+}
+.wrap-footer p{
+  width: 12.3rem;
+}
 }
