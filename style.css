@@ -94,9 +94,6 @@ footer .wrap-footer .social-div:hover {
   color: var(--grayishBlue);
   font-size: 0.8rem;
 }
-section {
-  display: none;
-}
 
 /* --------------- active state footer ------------------------- */
 
@@ -104,9 +101,17 @@ section {
   display: flex;
   background-color: var(--veryDarkGrayishBlue);
   margin: auto;
-  padding: 1.5rem 2rem 1.3rem 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.show {
+  display: flex;
+}
+.hide {
+  display: none;
 }
 
 .wrap-footer-active .social-links-active {
@@ -123,18 +128,18 @@ section {
   letter-spacing: 0.3rem;
 }
 
-footer .wrap-footer-active .social-div {
-  padding: 0.38rem 0.5rem 0.1rem 0.5rem;
-
+.wrap-footer-active .social-div-active {
   background-color: var(--lightGrayishBlue);
+  cursor: pointer;
+  padding: 0.38rem 0.5rem 0.1rem 0.5rem;
   border-radius: 50%;
   height: 1.8rem;
   width: 1.8rem;
   align-self: center;
-  margin-left: 2.75rem;
 
 }
 
 footer .wrap-footer-active .social-div:hover {
   cursor: pointer;
+  
 }
