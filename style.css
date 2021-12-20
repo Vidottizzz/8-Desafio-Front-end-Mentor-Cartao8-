@@ -12,89 +12,129 @@
 
 body {
   font-size: 0.8125rem;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   background-color: var(--lightGrayishBlue);
 }
 .card {
-    width: 20.5rem;
-    height: 33.9rem;
-    background-color: white;
-    margin: auto;
-    border-radius: 0.5rem;
-    margin-top: 8rem;
+  width: 20.5rem;
+  height: 33.6rem;
+  background-color: white;
+  margin: auto;
+  border-radius: 0.5rem;
+  margin-top: 8rem;
 }
-.card-content{
-    position: relative;
+.card-content {
+  position: relative;
 }
 .card .card-content #head-img {
-    width: 100%; 
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-   
-	position: absolute;
-	clip: rect(0px, 330px, 220px, 0px);
-}
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 
+  position: absolute;
+  clip: rect(0px, 330px, 220px, 0px);
+}
 
 .wrapper {
-    width: 80%;
-    margin: auto;
-    padding-top: 13.85rem;
+  width: 100%;
+  margin: auto;
+  padding-top: 13.85rem;
 }
 .card .card-content .wrapper main h1 {
-    padding-top: 2rem;
-    font-size: 1rem;
-    padding-bottom: 1rem;
+  padding-top: 2rem;
+  font-size: 1rem;
+  padding: 2rem 2rem 0 2rem;
 }
 .card .card-content .wrapper main p {
-    font-size: 0.83rem;
-    line-height: 1.4rem;
-    margin-bottom: 1.5rem;
+  font-size: 0.84rem;
+  line-height: 1.4rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 2rem 0.45rem 2rem;
 }
 .card .card-content #footer-avatar {
-    width: 2.5rem;
-    border-radius: 50%;
+  width: 2.5rem;
+  border-radius: 50%;
 }
 footer {
-   padding-top: 0.5rem;
+  padding-top: 0.5rem;
+  padding: 0rem 2rem 2rem 2rem;
 }
 .wrap-footer {
-    display: flex;
-    width: 18.6rem;
+  display: flex;
+  width: 18.6rem;
 }
 
 footer .wrap-footer .social-div {
-  padding: 0.6rem;
+  padding: 0.38rem 0.5rem 0.1rem 0.5rem;
+  padding-left: 0.5rem;
+
   background-color: var(--lightGrayishBlue);
   border-radius: 50%;
-  height: 2.1rem;
-  width: 2.1rem;
+  height: 1.8rem;
+  width: 1.8rem;
   align-self: center;
-  margin-left: 4rem;
-}
-
-footer .wrap-footer .footer-social {
-  padding-bottom: 0.14rem;
+  margin-left: 4.21rem;
 }
 footer .wrap-footer .social-div:hover {
-
- cursor: pointer;
-    
-    
+  cursor: pointer;
 }
 
 .card .card-content footer .wrap-footer-text {
-   padding-left: 1rem;
-   align-self: center;
+  padding-left: 1rem;
+  align-self: center;
 }
-.card .card-content footer .wrap-footer-text p{
-   padding-bottom: 0.2rem;
+.card .card-content footer .wrap-footer-text p {
+  padding-bottom: 0.3rem;
 }
-.card .card-content footer .wrap-footer-text p:nth-child(1){
-   font-weight: 700;
-   font-size: 0.80rem;
+.card .card-content footer .wrap-footer-text p:nth-child(1) {
+  font-weight: 700;
+  font-size: 0.8rem;
 }
-.card .card-content footer .wrap-footer-text p:nth-child(2){
-   color: var(--grayishBlue);
-   font-size: 0.80rem;
+.card .card-content footer .wrap-footer-text p:nth-child(2) {
+  color: var(--grayishBlue);
+  font-size: 0.8rem;
+}
+section {
+  display: none;
+}
+
+/* --------------- active state footer ------------------------- */
+
+.wrap-footer-active {
+  display: flex;
+  background-color: var(--veryDarkGrayishBlue);
+  margin: auto;
+  padding: 1.5rem 2rem 1.3rem 2rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.wrap-footer-active .social-links-active {
+  display: flex;
+  align-items: center;
+  margin-right: 3.5rem;
+}
+.wrap-footer-active .social-links-active img {
+  padding-left: 1rem;
+}
+
+.wrap-footer-active .social-links-active p {
+  color: white;
+  letter-spacing: 0.3rem;
+}
+
+footer .wrap-footer-active .social-div {
+  padding: 0.38rem 0.5rem 0.1rem 0.5rem;
+
+  background-color: var(--lightGrayishBlue);
+  border-radius: 50%;
+  height: 1.8rem;
+  width: 1.8rem;
+  align-self: center;
+  margin-left: 2.75rem;
+
+}
+
+footer .wrap-footer-active .social-div:hover {
+  cursor: pointer;
 }
