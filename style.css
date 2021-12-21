@@ -11,7 +11,6 @@
 }
 .filter-white {
   filter: invert(1) brightness(500%) sepia(1%) saturate(10000%);
-
 }
 
 body {
@@ -80,6 +79,7 @@ footer .wrap-footer .social-div {
   align-self: center;
   margin-left: 4.21rem;
 }
+
 footer .wrap-footer .social-div:hover {
   cursor: pointer;
 }
@@ -108,17 +108,13 @@ footer .wrap-footer .social-div:hover {
   margin: auto;
   padding: 1rem 2rem 1rem 2rem;
   border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  
 }
 
 .show {
   display: flex;
-  
 }
 .hide {
   display: none;
-
 }
 
 .wrap-footer-active .social-links-active {
@@ -143,18 +139,27 @@ footer .wrap-footer .social-div:hover {
   height: 1.8rem;
   width: 1.8rem;
   align-self: center;
-
 }
 
 footer .wrap-footer-active .social-div:hover {
   cursor: pointer;
-  
 }
-
+.popover-content {
+  display: none;
+}
+.attribution a { 
+  color: rgb(195, 6, 212) ;  
+         
+}
+.attribution p {
+    margin-top: 3rem;
+    color: black;
+  text-align: center;
+  font-size: 1rem;
+}
 /* ------------------------------------- MEDIA ----------------------------------- */
 
-@media only screen and (min-width: 1100px) {
-
+@media only screen and (min-width: 760px) {
   .card {
     width: 45rem;
     height: 17.5rem;
@@ -163,53 +168,103 @@ footer .wrap-footer-active .social-div:hover {
     border-radius: 0.5rem;
     margin-top: 8rem;
   }
- 
 
-figure {
-  width: 50%;
-  height: 100%;
-  
-}
-.card .card-content {
-  width: 50%;
-  display: flex;
-}
-.card .card-content #head-img {
-  height: 17.5rem;
-  width: 21.5rem;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0;
-position: absolute;
-  clip: rect(0px, 283px, 285px, 0px);
-}
-.wrapper {
-  width: 100%;
-  margin: auto;
-  padding-top: 0rem;
-  margin-left: 18.5rem;
-}
+  figure {
+    width: 50%;
+    height: 100%;
+  }
+  .card .card-content {
+    width: 50%;
+    display: flex;
+  }
+  .card .card-content #head-img {
+    height: 17.5rem;
+    width: 21.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1rem;
+    position: absolute;
+    clip: rect(0px, 283px, 285px, 0px);
+  }
+  .wrapper {
+    width: 100%;
+    margin: auto;
+    padding-top: 0rem;
+    margin-left: 18.5rem;
+  }
 
-.card .card-content .wrapper main h1 {
-  width: 26rem;
-  padding-top: 2rem;
-  font-size: 1.2rem;
-  padding: 1.86rem 2rem 0.25rem 2rem;
-}
-.card .card-content .wrapper main p {
-  width: 26rem;
-  font-size: 0.80rem;
-  line-height: 1.4rem;
-  margin-bottom: 1.3rem;
-  padding: 0.6rem 2rem 0rem 2rem;
-}
-.card .card-content #footer-avatar {
-  width: 2.5rem;
-  border-radius: 50%;
-}
-.wrap-footer {
-  padding-top: 0rem;
-}
-.wrap-footer p{
-  width: 12.3rem;
-}
+  .card .card-content .wrapper main h1 {
+    width: 26rem;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    padding: 1.86rem 2rem 0.25rem 2rem;
+  }
+  .card .card-content .wrapper main p {
+    width: 26rem;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    margin-bottom: 1.3rem;
+    padding: 0.6rem 2rem 0rem 2rem;
+  }
+  .card .card-content #footer-avatar {
+    width: 2.5rem;
+    border-radius: 50%;
+  }
+  .wrap-footer {
+    padding-top: 0rem;
+  }
+  .wrap-footer p {
+    width: 12.3rem;
+  }
+  .popover-wrapper {
+    position: relative;
+  }
+  .popover-content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: -42px;
+    bottom: 51px;
+    display: flex;
+    background-color: var(--veryDarkGrayishBlue);
+    padding: 1rem 1.8rem 0.8rem 1.8rem;
+    align-items: center;
+    border-radius: 0.5rem;
+  }
+  .popover-content::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 110px;
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: var(--veryDarkGrayishBlue) transparent;
+  }
+
+  .popover-content img {
+    padding-left: 1rem;
+  }
+  .popover-content p {
+    width: 4.8rem;
+    color: var(--grayishBlue);
+    letter-spacing: 0.3rem;
+  }
+
+  .show-pop {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, -20px);
+    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  }
+  footer .wrap-footer .social-div {
+    padding: 0.38rem 0.5rem 0.1rem 0.5rem;
+    padding-left: 0.5rem;
+
+    background-color: var(--veryDarkGrayishBlue);
+    border-radius: 50%;
+    height: 1.8rem;
+    width: 1.8rem;
+    align-self: center;
+    margin-left: 4.21rem;
+  }
 }
