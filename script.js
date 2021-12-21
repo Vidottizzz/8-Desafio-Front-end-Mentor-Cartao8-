@@ -7,16 +7,20 @@ const popover = document.querySelector('.popover-content');
 
 secondDiv.classList.add('hide');
 
+
 button.addEventListener('click', () => {
     // !defaultDiv.classList.contains('.hide') ?  defaultDiv.classList.add('hide') : secondDiv.classList.remove('hide');
     let largura = window.innerWidth;
+    
     if (largura < 760) {
         secondDiv.classList.toggle('hide')
         defaultDiv.classList.toggle('hide');
+        button.classList.add('bg-color');
     }
     if (largura > 760) {
         secondDiv.classList.add('hide');
         defaultDiv.classList.remove('hide')
+       
     }
     popover.classList.toggle('show-pop')
 
