@@ -266,6 +266,7 @@ footer .wrap-footer-active .social-div:hover {
     width: 1.8rem;
     align-self: center;
     margin-left: 4.21rem;
+    margin-top: 0.29rem;
   }
   footer .wrap-footer .social-div .footer-social{
     filter: invert(1) brightness(500%) sepia(1%) saturate(10000%);
