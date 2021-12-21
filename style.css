@@ -12,7 +12,6 @@
 .filter-white {
   filter: invert(1) brightness(500%) sepia(1%) saturate(10000%);
 }
-
 body {
   font-size: 0.8125rem;
   font-family: "Manrope", sans-serif;
@@ -256,15 +255,22 @@ footer .wrap-footer-active .social-div:hover {
     transform: translate(0, -20px);
     transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
   }
-  footer .wrap-footer .social-div {
+  footer .wrap-footer .social-div{
     padding: 0.38rem 0.5rem 0.1rem 0.5rem;
     padding-left: 0.5rem;
 
     background-color: var(--veryDarkGrayishBlue);
+
     border-radius: 50%;
     height: 1.8rem;
     width: 1.8rem;
     align-self: center;
     margin-left: 4.21rem;
   }
+  footer .wrap-footer .social-div .footer-social{
+    filter: invert(1) brightness(500%) sepia(1%) saturate(10000%);
+   
+    
+  }
+
 }

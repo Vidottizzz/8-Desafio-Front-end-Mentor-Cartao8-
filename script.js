@@ -34,8 +34,7 @@ window.addEventListener('resize', function () {
         secondDiv.classList.add('hide');
         defaultDiv.classList.remove('hide')
         popover.classList.remove('show-pop');
-        buttonImg.classList.add('filter-white');
-        buttonImg.parentElement.className.add('bg-blue-darker');
+        
     } else {
         buttonImg.classList.remove('filter-white');
     }
